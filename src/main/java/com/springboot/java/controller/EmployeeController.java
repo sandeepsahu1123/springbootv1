@@ -17,10 +17,12 @@ import com.springboot.java.repository.EmployeeRepository;
 public class EmployeeController {
 	
 	@Autowired
-	private EmployeeRepository repository;
+	private EmployeeRepository repository;        
+	
 	
 	@GetMapping("/allemployees")
 	public List<Employee> getAllEmployees(){
+		System.out.println("gagan");
 		return repository.findAll();
 		
 		
